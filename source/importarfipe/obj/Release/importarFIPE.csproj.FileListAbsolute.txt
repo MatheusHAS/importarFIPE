@@ -1,0 +1,10 @@
+C:\GIT\importarfipe\source\importarFIPE\bin\Release\importarFIPE.exe.config
+C:\GIT\importarfipe\source\importarFIPE\bin\Release\importarFIPE.exe
+C:\GIT\importarfipe\source\importarFIPE\bin\Release\importarFIPE.pdb
+C:\GIT\importarfipe\source\importarFIPE\bin\Release\Newtonsoft.Json.dll
+C:\GIT\importarfipe\source\importarFIPE\bin\Release\Newtonsoft.Json.xml
+C:\GIT\importarfipe\source\importarFIPE\obj\Release\importarFIPE.frmPrincipal.resources
+C:\GIT\importarfipe\source\importarFIPE\obj\Release\importarFIPE.Properties.Resources.resources
+C:\GIT\importarfipe\source\importarFIPE\obj\Release\importarFIPE.csproj.GenerateResource.Cache
+C:\GIT\importarfipe\source\importarFIPE\obj\Release\importarFIPE.exe
+C:\GIT\importarfipe\source\importarFIPE\obj\Release\importarFIPE.pdb
