@@ -1,0 +1,91 @@
+--
+-- Estrutura para tabela `detalhes_veiculo`
+--
+
+CREATE TABLE `detalhes_veiculo` (
+  `id` int(11) NOT NULL,
+  `ano_modelo` int(11) NOT NULL,
+  `marca` varchar(60) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `veiculo` varchar(100) NOT NULL,
+  `preco` varchar(50) NOT NULL,
+  `combustivel` varchar(30) NOT NULL,
+  `referencia` varchar(50) NOT NULL,
+  `fipe_codigo` varchar(50) NOT NULL,
+  `key` varchar(50) NOT NULL,
+  `idmodvei` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `marca`
+--
+
+CREATE TABLE `marca` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `fipe_name` varchar(100) NOT NULL,
+  `key` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `modvei_marca`
+--
+
+CREATE TABLE `modvei_marca` (
+  `id` varchar(20) NOT NULL,
+  `fipe_marca` varchar(100) NOT NULL,
+  `fipe_codigo` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `marca` varchar(100) NOT NULL,
+  `key` varchar(100) NOT NULL,
+  `veiculo` varchar(50) NOT NULL,
+  `idmarca` int(11) NOT NULL,
+  `idveiculo_marca` int(11) NOT NULL,
+  `idfinal` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `veiculo_marca`
+--
+
+CREATE TABLE `veiculo_marca` (
+  `fipe_marca` varchar(100) NOT NULL,
+  `fipe_name` varchar(100) NOT NULL,
+  `marca` varchar(100) NOT NULL,
+  `key` varchar(100) NOT NULL,
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `ref_marca` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Índices de tabelas apagadas
+--
+
+--
+-- Índices de tabela `marca`
+--
+ALTER TABLE `marca`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Índices de tabela `modvei_marca`
+--
+ALTER TABLE `modvei_marca`
+  ADD PRIMARY KEY (`idfinal`);
+
+--
+-- Índices de tabela `veiculo_marca`
+--
+ALTER TABLE `veiculo_marca`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas apagadas
+--

@@ -20,7 +20,7 @@ namespace importarFIPE
         int erros;
         private bool proxy = false;
         private string proxy_user = "";
-        private string proxy_pass = "192837";
+        private string proxy_pass = "";
         private string BASE_URL_API = "http://fipeapi.appspot.com/api";
 
         bool autodown = false;
@@ -38,6 +38,9 @@ namespace importarFIPE
             erros = 0;
 
             // Executado da primeira vez
+            bool folderExists = Directory.Exists("cfg");
+            if (!folderExists)
+                Directory.CreateDirectory("cfg");
 
             // Carrega as Marcas
             FileInfo fi = new FileInfo("cfg/ListaMarcas.serializer");
